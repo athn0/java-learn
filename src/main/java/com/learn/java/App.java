@@ -1,6 +1,5 @@
 package com.learn.java;
 
-import javax.swing.*;
 
 /**
  * Hello world!

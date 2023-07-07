@@ -53,5 +53,16 @@ public class AutoPojo {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-    
+
+    @Override
+    public String toString() {
+        return "AutoPojo{" +
+                "id=" + id +
+                ", marca='" + marca + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", motor='" + motor + '\'' +
+                ", color='" + color + '\'' +
+                ", matricula='" + matricula + '\'' +
+                '}';
+    }
 }
