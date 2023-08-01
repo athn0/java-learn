@@ -1,4 +1,4 @@
-package com.learn.java.strings;
+package com.learn.java.string;
 
 import static com.learn.java.Result.Show;
 import java.util.Arrays;
