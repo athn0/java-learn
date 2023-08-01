@@ -1,9 +1,6 @@
 package com.learn.java.poo;
 import com.learn.java.AutoPojo;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 import static com.learn.java.Result.Show;
 public class Main {
 
@@ -37,7 +34,21 @@ public class Main {
         Show(m);
         Show(m.getTipoMoto().getColor());
 
+        // Interfaz con metodo default
+        Imprimible im = new Imprimible() {};
+        Show(im.imprimir());
 
-
+        // Interfaz con sobrescritura
+        im = new Imprimible() {
+            @Override
+            public String imprimir() {
+                return Imprimible.super.imprimir() + ", impresion agregada";
+            }
+        };
+        Show(im.imprimir());
+        // Metodo estatico de una interfaz
+        Imprimible.imprimir(im);
+        // Constante estatico en un interfaz
+        Show(Imprimible.TEXTO_DEFAULT);
     }
 }
